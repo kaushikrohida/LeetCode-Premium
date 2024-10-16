@@ -48,6 +48,7 @@ For a detailed example of input data and expected output, please refer to the pr
 
 The solution uses Common Table Expressions (CTEs) and window functions to calculate the required metrics and identify users with bursty behavior. For the complete solution, please check the SQL file in this repository.
 
+```sql
 with cte as (
     select
         *,
@@ -71,3 +72,4 @@ from cte2
 where max_7day_posts >= 2*avg_weekly_posts
 group by 1
 order by 1
+```

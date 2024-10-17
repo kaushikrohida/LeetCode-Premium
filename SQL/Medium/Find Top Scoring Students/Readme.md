@@ -95,7 +95,6 @@ Note: Output table is ordered by student_id in ascending order.
 ## Solution
 
 ```sql
-# Write your MySQL query statement below
 select
     s.student_id
 from students s

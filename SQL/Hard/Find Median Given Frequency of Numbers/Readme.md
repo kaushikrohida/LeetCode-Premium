@@ -68,3 +68,7 @@ FROM cte;
 3. We use the `ROUND` function to round the result to one decimal place, as required by the problem.
 
 This solution works efficiently even with large datasets, as it doesn't actually materialize the decompressed data, but rather uses SQL's aggregate functions to calculate the median directly from the compressed representation.
+
+## Usage
+
+To use this solution, simply execute the SQL query in a database that supports Common Table Expressions and the `PERCENTILE_CONT` function. Ensure that the `Numbers` table is populated with the appropriate data before running the query.
